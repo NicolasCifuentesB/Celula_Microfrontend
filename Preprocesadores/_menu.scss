@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0;
+
+    li{
+        display: inline-block;
+
+        a{
+            text: {
+                decoration: none;
+                transform: uppercase;
+                align: center;
+            }
+
+            font: {
+                family: Calibri, Calibri;
+                size: 23px;
+                style: italic;
+            }
+            color: white;
+            padding: 20px;
+            background-color: darkblue;
+        }
+    }
+}

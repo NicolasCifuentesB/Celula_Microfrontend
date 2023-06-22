@@ -1,0 +1,75 @@
+/* $colorbg: salmon;
+$widthH1: 200px;
+$width2: $widthH1 + 100px;
+
+body {
+    background-color: $colorbg;
+}
+
+h1 {
+    color: $colorbg;
+    background-color: white;
+    padding: 15px;
+    width: $widthH1;
+}
+
+p {
+    width: $width2;
+} */
+
+/*::::::::::::::::::::::::::::::::: Anidación o Nesting::::::::::::::::::::::::::::::::: */
+
+/* :::::::::::::::::::::::::::::::::CSS NORMAL */
+
+/* ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: darkblue;
+} */
+
+/* ::::::::::::::::::::::::::::::::: SASS */
+/* ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0;
+
+    li{
+        display: inline-block;
+
+        a{
+            text: {
+                decoration: none;
+                transform: uppercase;
+                align: center;
+            }
+
+            font: {
+                family: Calibri, Calibri;
+                size: 23px;
+                style: italic;
+            }
+            color: white;
+            padding: 20px;
+            background-color: darkblue;
+        }
+    }
+}
+ */
+
+
+ @import "menu";
+ body{
+    background-color: darkgrey
+ }
+

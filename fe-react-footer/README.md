@@ -33,16 +33,16 @@
         <li><a href="#installation">Installation</a></li>
         <li><a href="#running-steps">Running steps</a></li>
         <ul>
-          <li><a href="#for-shell">microfrontend fe-react-footer shell loader</a></li>
-          <li><a href="#run-tests">Running tests</a></li>
-          <li><a href="#build-app">Build aplication</a></li>
+          <li><a href="#microfrontend-fe-react-footer-shell-loader">microfrontend fe-react-footer shell loader</a></li>
+          <li><a href="#running-tests">Running tests</a></li>
+          <li><a href="#build-application">Build aplication</a></li>
         </ul>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#publish-dev">How to publish develop</a></li>
-    <li><a href="#publish-cert-prod">How to publish certification and production</a></li>
-    <li><a href="#pull-req">How to make pull requests</a></li>
+    <li><a href="#how-to-publish-develop">How to publish develop</a></li>
+    <li><a href="#how-to-publish-certification-and-production">How to publish certification and production</a></li>
+    <li><a href="#pull-requests">Pull requests</a></li>
     <li><a href="#branch-strat">Branch strategies</a></li>
   </ol>
 </details>
@@ -129,19 +129,19 @@ Date: 2022-02-15
 2. npm start
 3. importar en index.ejs y layout.html (single-spa)
 
-<!-- For shell -->
+<!-- microfrontend fe-react-footer shell loader -->
 #  microfrontend fe-react-footer shell loader
 - `git clone git@github.com/Ecosistema-Digital-Bci/fe-react-footer.git`. This command clones the shell repository.
 -  create file .npmrc or npm config set registry <registry url> with the credentials to get bci azure dependencies
 - `npm install`. This command installs all dependencies.
 - `npm start`. This command runs the serve and exposes it on [localhost:8080](http://localhost:8080/).
 
-<!-- Run tests -->
+<!-- Runnig tests -->
 # Running tests
 - `npm test`. This command runs the tests.
 - `npm run coverage`. This command runs the tests and creates a coverage folder with the coverage report.
 
-<!-- Build app -->
+<!-- Build application -->
 # Build application
 - `npm run build`.  This command runs develop build.
 - `npm run build:webpack`. This command runs webpack build in production.
@@ -152,17 +152,17 @@ Date: 2022-02-15
 
 - [x] Add Changelog
 
-<!-- Publish dev -->
+<!-- How to publish develop -->
 ## How to publish develop
 
 - Push changes to `feature branch` and CI starts automatically
 
-<!-- Publish cert prod -->
-## How to publish cert and production
+<!-- How to publish certification and production -->
+## How to publish certification and production
 
 - Create a pull request from the `feature branch` to the `develop branch`.
 
-<!-- Pull req -->
+<!-- Pull requests -->
 ### Pull requests
 
 - Your work should be merged on `develop branch`.

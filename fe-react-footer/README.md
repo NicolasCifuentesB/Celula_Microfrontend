@@ -76,7 +76,7 @@ Date: 2022-02-15
     ├── src                                                     
         ├── __mocks__                                           # __mocks__ folder contains a default string return
             ├── fileMock.js
-        ├── app                                                 # app folder contains declarations and root component of the project
+        ├── app                                                 # app folder contains declarations and project's root component
             ├── declarations.d.ts
             ├── root.component.tsx            
         ├── assets                                              # assets folder contains static content and styles

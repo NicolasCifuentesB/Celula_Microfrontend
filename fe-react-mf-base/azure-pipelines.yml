@@ -1,9 +1,0 @@
-resources:
-  repositories:
-    - repository: templates
-      type: github
-      name: BCI-Ecosistemas-Digitales/devops-resources
-      endpoint: BCI-Ecosistemas-Digitales
-      ref: main
-extends:
-  template: pipeline/micro-fe/main.yaml@templates

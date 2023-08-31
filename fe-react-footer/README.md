@@ -129,19 +129,19 @@ Date: 2022-02-15
 2. npm start
 3. importar en index.ejs y layout.html (single-spa)
 
-<!-- microfrontend fe-react-footer shell loader -->
+<!-- For shell -->
 #  microfrontend fe-react-footer shell loader
 - `git clone git@github.com/Ecosistema-Digital-Bci/fe-react-footer.git`. This command clones the shell repository.
 -  create file .npmrc or npm config set registry <registry url> with the credentials to get bci azure dependencies
 - `npm install`. This command installs all dependencies.
 - `npm start`. This command runs the serve and exposes it on [localhost:8080](http://localhost:8080/).
 
-<!-- Running tests -->
+<!-- Run tests -->
 # Running tests
 - `npm test`. This command runs the tests.
 - `npm run coverage`. This command runs the tests and creates a coverage folder with the coverage report.
 
-<!-- Build application -->
+<!-- Build app -->
 # Build application
 - `npm run build`.  This command runs develop build.
 - `npm run build:webpack`. This command runs webpack build in production.
@@ -152,26 +152,25 @@ Date: 2022-02-15
 
 - [x] Add Changelog
 
-<!-- How to publish develop -->
+<!-- Publish dev -->
 ## How to publish develop
 
 - Push changes to `feature branch` and CI starts automatically
 
-<!-- How to publish cert and production -->
+<!-- Publish cert prod -->
 ## How to publish cert and production
 
 - Create a pull request from the `feature branch` to the `develop branch`.
 
-<!-- Pull requests -->
+<!-- Pull req -->
 ### Pull requests
 
 - Your work should be merged on `develop branch`.
 - Create a new [pull request](https://github.com/Ecosistema-Digital-Bci/fe-single-spa-shell-base.git/pulls). 
 
 <!-- Branch strategy -->
-## Branch strategy
+## Branch strat
 
 - For each new feature a new branch should be created.
 - The new branch should be named like `feature/EFE-123` were `123` is the user story number.
 - A new feature should be created from the `main branch` and once finished it should be merged with `develop branch`.
-

@@ -33,7 +33,7 @@
         <li><a href="#installation">Installation</a></li>
         <li><a href="#running-steps">Running steps</a></li>
         <ul>
-          <li><a href="#for-shell">For shell</a></li>
+          <li><a href="#for-shell">microfrontend fe-react-footer shell loader</a></li>
           <li><a href="#run-tests">Running tests</a></li>
           <li><a href="#build-app">Build aplication</a></li>
         </ul>
@@ -47,24 +47,30 @@
   </ol>
 </details>
 
-
-<!-- Project version -->
-## Project version
-Version: v1.0.0
-
-Date: 2022-02-15
-
 <!-- About the project -->
 ## About the project
-Description: fe-react-footer - archetype base that allows to create footers for micro frontends using Single SPA
+fe-react-footer is an archetype base that allows to create footers for micro frontends using Single SPA.
 
-React version: ^17.0.2
-
+<!-- Team -->
 ### Team
 
 - Developers: Jordan González, Jose Carrasco, Jose Antonio Reyes, Juan Carlos Leon
 - Lead: Eric Salosny
 
+<!-- Project version -->
+### Project version
+Version: v1.0.0
+
+Date: 2022-02-15
+
+<!-- Built With -->
+### Built With
+
+* [Single-SPA](https://single-spa.js.org/)
+* [Jest](https://jestjs.io/)
+* [React](https://reactjs.org/): version ^17.0.2
+
+<!-- Project structure -->
 ### Project structure
 
     ├── src                                                     
@@ -88,26 +94,22 @@ React version: ^17.0.2
         ├── root.component.test.tsx                             # Here is a unit testing for the component
 
 
-### Built With
-
-* [Single-SPA](https://single-spa.js.org/)
-* [Jest](https://jestjs.io/)
-* [React](https://reactjs.org/)
-
-
 <!-- GETTING STARTED -->
-## Getting Started
+### Getting Started
 
-### Prerequisites
+<!-- Requisites -->
+## Requisites
 
 - In orther to use this project is neccesary a container shell with Single SPA.
 - nodejs v14.18.3
 
-### Project dependencies
+<!-- Project dependencies -->
+## Project dependencies
 
 - [package.json](package.json)
 
-### Installation
+<!-- Installation -->
+## Installation
 
 <!-- git clone https://github.com/frodrisu/Celula_Microfrontend/tree/Arquetipos/fe-oss-ng-base-mf -->
 
@@ -120,44 +122,53 @@ React version: ^17.0.2
    npm install
    ```
 
-### Running steps
+<!-- Running steps -->
+## Running steps
 
 1. Follow installation steps
 2. npm start
 3. importar en index.ejs y layout.html (single-spa)
 
-## For shell that load microfrontend fe-react-footer
+<!-- microfrontend fe-react-footer shell loader -->
+#  microfrontend fe-react-footer shell loader
 - `git clone git@github.com/Ecosistema-Digital-Bci/fe-react-footer.git`. This command clones the shell repository.
 -  create file .npmrc or npm config set registry <registry url> with the credentials to get bci azure dependencies
 - `npm install`. This command installs all dependencies.
 - `npm start`. This command runs the serve and exposes it on [localhost:8080](http://localhost:8080/).
 
-## Running the tests
+<!-- Running tests -->
+# Running tests
 - `npm test`. This command runs the tests.
 - `npm run coverage`. This command runs the tests and creates a coverage folder with the coverage report.
 
-## Build application
+<!-- Build application -->
+# Build application
 - `npm run build`.  This command runs develop build.
 - `npm run build:webpack`. This command runs webpack build in production.
 - `npm run build:types`. This command compiles TypeSrcipt files.
 
+<!-- Roadmap -->
 ## Roadmap
 
 - [x] Add Changelog
 
+<!-- How to publish develop -->
 ## How to publish develop
 
 - Push changes to `feature branch` and CI starts automatically
-  
+
+<!-- How to publish cert and production -->
 ## How to publish cert and production
 
 - Create a pull request from the `feature branch` to the `develop branch`.
 
+<!-- Pull requests -->
 ### Pull requests
 
 - Your work should be merged on `develop branch`.
 - Create a new [pull request](https://github.com/Ecosistema-Digital-Bci/fe-single-spa-shell-base.git/pulls). 
 
+<!-- Branch strategy -->
 ## Branch strategy
 
 - For each new feature a new branch should be created.

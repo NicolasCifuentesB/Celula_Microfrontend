@@ -86,11 +86,11 @@ Date: 2022-02-15
             ├── styles                                          # Here are css files
                 ├── component.css
         ├── components                                          # components folder contains project's components
-            ├── component.tsx
-            ├── Navbar.tsx 
+            ├── Footer.tsx
+            ├── component.tsx  
         ├── services                                            # services folder contains project's api services
             ├── api.ts
-        ├── ntt-navbar-react.tsx                                # Here are configs for MFE single SPA
+        ├── ntt-footer-react.tsx                                # Here are configs and micro frontends register
         ├── root.component.test.tsx                             # Here is a unit testing for the component
 
 

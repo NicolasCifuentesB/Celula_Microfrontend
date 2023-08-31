@@ -74,24 +74,12 @@ Date: 2022-02-15
 ### Project structure
 
     ├── src                                                     
-        ├── __mocks__                                           # __mocks__ folder contains a default string return
-            ├── fileMock.js
-        ├── app                                                 # app folder contains declarations and project's root component
-            ├── declarations.d.ts
-            ├── root.component.tsx            
-        ├── assets                                              # assets folder contains static content and styles
-            ├── images                                          # Here are image files
-                ├── bci_logo.png
-                ├── ntt_data_logo.png
-            ├── styles                                          # Here are css files
-                ├── component.css
-        ├── components                                          # components folder contains project's components
-            ├── component.tsx
-            ├── Navbar.tsx 
-        ├── services                                            # services folder contains project's api services
-            ├── api.ts
-        ├── ntt-navbar-react.tsx                                # Here are configs for MFE single SPA
+        ├── diseño                                              # Here are css files
+            ├── estilos.css
+        ├── declarations.d.ts                                   # Here are the typescripts declarations
+        ├── ntt-fe-reactpage-mf.tsx                             # Here are the Single SPA project settings
         ├── root.component.test.tsx                             # Here is a unit testing for the component
+        ├── root.component.tsx                                  # Here is the component of the project
 
 
 <!-- GETTING STARTED -->

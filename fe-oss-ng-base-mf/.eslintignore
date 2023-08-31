@@ -1,0 +1,10 @@
+package.json
+package-lock.json
+dist
+storybook
+documentation
+src/single-spa
+src/elements
+src/main.ts
+src/assets
+*.spec.ts

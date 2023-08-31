@@ -1,0 +1,9 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["./src/nttdata-lib-utilitaria.ts"],
+  "compilerOptions": {
+    "declarationDir": "dist/fe-lib-utilitarias"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}

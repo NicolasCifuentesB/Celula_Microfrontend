@@ -54,7 +54,7 @@
 
 <!-- About the project -->
 ## About the project
-fe-react-mf-base is an archetype base that allows to create footers for micro frontends using Single SPA.
+fe-react-mf-base is an archetype base that allows to create Navbars for micro frontends using Single SPA calling data from an api.
 
 <!-- Team -->
 ### Team
@@ -191,6 +191,7 @@ Date: 2022-02-15
 <!-- Runnig tests -->
 ## Running tests
 - `npm test`. This command runs the tests.
+- `npm run watch-tests`. This command runs the tests in order to watch its results.
 - `npm run coverage`. This command runs the tests and creates a coverage folder with the coverage report.
 
 <!-- Build application -->

@@ -7,7 +7,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/250px-React.svg.png" alt="Logo" width="120" height="100">
   </a>
 
-  <h3 align="center">Arquetipo React - Microfrontend - Single SPA</h3>
+  <h3 align="center">Arquetipo React: Footer - Microfrontend - Single SPA</h3>
 </div>
 
 
@@ -190,7 +190,8 @@ Date: 2022-02-15
    
 <!-- Runnig tests -->
 ## Running tests
-- `npm test`. This command runs the tests.
+- `npm run test`. This command runs the tests.
+- `npm run watch-tests`. This command runs the tests in order to watch its results.
 - `npm run coverage`. This command runs the tests and creates a coverage folder with the coverage report.
 
 <!-- Build application -->

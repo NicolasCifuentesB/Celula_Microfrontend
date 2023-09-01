@@ -74,24 +74,54 @@ Date: 2022-02-15
 ### Project structure
 
     ├── src                                                     
-        ├── __mocks__                                           # __mocks__ folder contains a default string return
-            ├── fileMock.js
-        ├── app                                                 # app folder contains declarations and project's root component
-            ├── declarations.d.ts
-            ├── root.component.tsx            
-        ├── assets                                              # assets folder contains static content and styles
-            ├── images                                          # Here are image files
-                ├── bci_logo.png
-                ├── ntt_data_logo.png
-            ├── styles                                          # Here are css files
-                ├── component.css
-        ├── components                                          # components folder contains project's components
-            ├── Footer.tsx
-            ├── component.tsx  
-        ├── services                                            # services folder contains project's api services
-            ├── api.ts
-        ├── ntt-footer-react.tsx                                # Here are configs and micro frontends register
-        ├── root.component.test.tsx                             # Here is a unit testing for the component
+        ├── fe-wc-wk                                           # fe-wc-wk contains the src project's file
+            ├── src                                            
+                ├── components                                 # components folder contains different project's components
+                    ├── base-button                            # base-button folder contains base-button component's files
+                        ├── base-button.d.ts
+                        ├── base-button.js
+                        ├── base-button.js.map
+                    ├── base-card                              # base-card folder contains base-card component's files
+                        ├── base-card.d.ts
+                        ├── base-card.js
+                        ├── base-card.js.map
+                    ├── contador-example                       # contador-example folder contains contador-example component's files
+                        ├── FeWcWk.d.ts
+                        ├── FeWcWk.js
+                        ├── FeWcWk.js.map
+                    ├── UICard                                 # UICard folder contains UICard and UICard1 component's files
+                        ├── UICard.1.d.ts
+                        ├── UICard.1.js
+                        ├── UICard.1.js.map
+                        ├── UICard.d.ts
+                        ├── UICard.js
+                        ├── UICard.js.map
+                        ├── UICard.styles.d.ts
+                        ├── UICard.styles.js
+                        ├── UICard.styles.js.map
+                ├── lib                                        # lib folder contains UIComponent design component's files
+                    ├── UIComponent.d.ts
+                    ├── UIComponent.js
+                    ├── UIComponent.js.map
+                ├── styles                                     # styles folder contains theme css personalization files
+                    ├── theme.d.ts
+                    ├── theme.js
+                    ├── theme.js.map
+                ├── utils                                      # utils folder contains colors personalization files
+                    ├── colors.d.ts
+                    ├── colors.js
+                    ├── colors.js.map
+                ├── fe-wc-wk.d.ts                              # Here are the typescripts declarations of fe-wc-wk.js
+                ├── fe-wc-wk.js                                # Here are definitions of window componentes
+                ├── fe-wc-wk.js.map                            # Here is the origins's map file of fe-wc-wk.js
+                ├── index.d.ts                                 # Here are the typescripts declarations of index.js
+                ├── index.js                                   # Here are exports of componentes
+                ├── index.js.map                               # Here is the origins's map file of index.js
+            ├── tsconfig.tsbuidinfo                            # Here is the typescript build information
+        ├── declarations.d.ts                                  # Here are the typescripts declarations
+        ├── ntt-fe-react-webc.tsx                              # Here are configs and micro frontends register
+        ├── root.component.test.tsx                            # Here is a unit testing for the component
+        ├── root.component.tsx                                 # Here is the component of the project
 
 
 <!-- GETTING STARTED -->

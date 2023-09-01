@@ -44,11 +44,6 @@
         </ul>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#how-to-publish-develop">How to publish develop</a></li>
-    <li><a href="#how-to-publish-certification-and-production">How to publish certification and production</a></li>
-    <li><a href="#pull-requests">Pull requests</a></li>
-    <li><a href="#branch-strat">Branch strategies</a></li>
   </ol>
 </details>
 
@@ -187,31 +182,3 @@ Date: 2022-02-15
 - `npm run build`.  This command runs develop build.
 - `npm run build:webpack`. This command runs webpack build in production.
 - `npm run build:types`. This command compiles TypeSrcipt files.
-
-<!-- Roadmap -->
-# Roadmap
-
-- [x] Add Changelog
-
-<!-- How to publish develop -->
-# How to publish develop
-
-- Push changes to `feature branch` and CI starts automatically
-
-<!-- How to publish certification and production -->
-# How to publish certification and production
-
-- Create a pull request from the `feature branch` to the `develop branch`.
-
-<!-- Pull requests -->
-# Pull requests
-
-- Your work should be merged on `develop branch`.
-- Create a new [pull request](https://github.com/Ecosistema-Digital-Bci/fe-single-spa-shell-base.git/pulls). 
-
-<!-- Branch strategy -->
-# Branch strat
-
-- For each new feature a new branch should be created.
-- The new branch should be named like `feature/EFE-123` were `123` is the user story number.
-- A new feature should be created from the `main branch` and once finished it should be merged with `develop branch`.

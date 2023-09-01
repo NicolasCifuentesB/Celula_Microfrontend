@@ -31,9 +31,14 @@
         <li><a href="#requisites">Requisites</a></li>
         <li><a href="#project-dependencies">Project dependencies</a></li>
         <li><a href="#installation">Installation</a></li>
+        <ul>
+          <li><a href="#install-fe-oss-reactjs-base-mf">Install fe-oss-reactjs-base-mf</a></li>
+          <li><a href="#install-fe-react-webc">Install fe-react-webc</a></li>
+        </ul>
         <li><a href="#running-steps">Running steps</a></li>
         <ul>
-          <li><a href="#microfrontend-fe-react-footer-shell-loader">microfrontend fe-react-footer shell loader</a></li>
+          <li><a href="#microfrontend-fe-oss-reactjs-base-mf-shell-loader">microfrontend fe-oss-reactjs-base-mf shell loader</a></li>
+          <li><a href="#microfrontend-fe-react-webc-shell-loader">microfrontend fe-react-webc shell loader</a></li>
           <li><a href="#running-tests">Running tests</a></li>
           <li><a href="#build-application">Build aplication</a></li>
         </ul>
@@ -49,7 +54,7 @@
 
 <!-- About the project -->
 ## About the project
-fe-react-footer is an archetype base that allows to create footers for micro frontends using Single SPA.
+fe-react-webc is an archetype base that allows to create footers for micro frontends using Single SPA.
 
 <!-- Team -->
 ### Team
@@ -68,7 +73,7 @@ Date: 2022-02-15
 
 * [Single-SPA](https://single-spa.js.org/)
 * [Jest](https://jestjs.io/)
-* [React](https://reactjs.org/): version ^17.0.2
+* [React ^17.0.2](https://reactjs.org/)
 
 <!-- Project structure -->
 ### Project structure
@@ -143,9 +148,21 @@ Date: 2022-02-15
 
 <!-- git clone https://github.com/frodrisu/Celula_Microfrontend/tree/Arquetipos/fe-oss-ng-base-mf -->
 
+<!-- Install fe-oss-reactjs-base-mf -->
+#### Install fe-oss-reactjs-base-mf
 1. Clone the repo
    ```sh
    git clone https://github.com/Ecosistema-Digital-Bci/fe-oss-reactjs-base-mf.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+#### Install fe-react-webc
+1. Clone the repo of fe-react-webc
+   ```sh
+   git clone https://github.com/Ecosistema-Digital-Bci/fe-react-webc.git
    ```
 2. Install NPM packages
    ```sh
@@ -156,15 +173,50 @@ Date: 2022-02-15
 ## Running steps
 
 1. Follow installation steps
-2. npm start
-3. importar en index.ejs y layout.html (single-spa)
+2. importar en index.ejs y layout.html (single-spa)
 
-<!-- microfrontend fe-react-footer shell loader -->
-#  microfrontend fe-react-footer shell loader
-- `git clone git@github.com/Ecosistema-Digital-Bci/fe-react-footer.git`. This command clones the shell repository.
+   ```sh
+   "imports": {
+      "@ntt/root-config":  "//localhost:9001/ntt-root-config.js", 
+      "@@ntt/react-webc":" http://localhost:8089/ntt-fe-react-webc.js"  
+   }
+   
+   <body>
+
+   <div>
+    
+   <div>
+    <application id="single-spa-application:@ntt/react-webc"></application>
+   </div>
+
+
+   <noscript>
+    You need to enable JavaScript to run this app.
+   </noscript>
+   <script>
+    System.import('@ntt/root-config');
+   </script>
+   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+   </body>
+   ```
+
+<!-- microfrontend fe-oss-reactjs-base-mf shell loader -->
+3. ###  microfrontend fe-oss-reactjs-base-mf shell loader 
 -  create file .npmrc or npm config set registry <registry url> with the credentials to get bci azure dependencies
-- `npm install`. This command installs all dependencies.
-- `npm start`. This command runs the serve and exposes it on [localhost:8080](http://localhost:8080/).
+- This command runs the serve and exposes it on [localhost:4215](http://localhost:4215/).
+
+   ```sh
+   npm start:dev
+   ```
+
+<!-- microfrontend fe-react-webc shell loader -->
+4. ###  microfrontend fe-react-webc shell loader
+-  create file .npmrc or npm config set registry <registry url> with the credentials to get bci azure dependencies
+- This command runs the serve and exposes it on [localhost:8089](http://localhost:8089/).
+
+   ```sh
+   npm start
+   ```
 
 <!-- Runnig tests -->
 # Running tests
@@ -178,28 +230,28 @@ Date: 2022-02-15
 - `npm run build:types`. This command compiles TypeSrcipt files.
 
 <!-- Roadmap -->
-## Roadmap
+# Roadmap
 
 - [x] Add Changelog
 
 <!-- How to publish develop -->
-## How to publish develop
+# How to publish develop
 
 - Push changes to `feature branch` and CI starts automatically
 
 <!-- How to publish certification and production -->
-## How to publish certification and production
+# How to publish certification and production
 
 - Create a pull request from the `feature branch` to the `develop branch`.
 
 <!-- Pull requests -->
-### Pull requests
+# Pull requests
 
 - Your work should be merged on `develop branch`.
 - Create a new [pull request](https://github.com/Ecosistema-Digital-Bci/fe-single-spa-shell-base.git/pulls). 
 
 <!-- Branch strategy -->
-## Branch strat
+# Branch strat
 
 - For each new feature a new branch should be created.
 - The new branch should be named like `feature/EFE-123` were `123` is the user story number.
